@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowMed Space | Medical Education Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">KnowMed<span>Space</span></div>
+        
+        <nav class="nav-links" id="navLinks">
+            <a href="#" onclick="renderHome()">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Years <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="renderYear('First Year')">First Year</a>
+                    <a href="#" class="disabled">Second Year (Soon)</a>
+                    <a href="#" class="disabled">Third Year (Soon)</a>
+                </div>
+            </div>
+            <a href="mailto:halim.medecine@gmail.com">Contact</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div id="breadcrumbs" class="breadcrumbs-container"></div>
+
+    <main id="app-container" class="container">
+        </main>
+
+    <footer>
+        <p>&copy; 2026 KnowMed Space. Built for Future Doctors.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
